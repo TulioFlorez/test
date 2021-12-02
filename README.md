@@ -4,19 +4,30 @@
 This projects shows the basic configuration needed to start a Rest web service project test. 
 
 ## Install
-```sh 
+```sh
+mvn clean install
 mvn install
 ````
-or 
+or IDE
 ```sh 
-right click>maven>update project 
+ right-click on test>maven>update project 
 
-right click>Run as>Maven Install
+right-click on test>Run as>Maven Install
 ````
 ### Run WS
 ```sh 
-right click>Run as >springBoot App 
+right-click on test>Run as >springBoot App 
 ````
+## Docker usage
+Build the project and the Docker image with
+```
+mvn clean install
+```
+Then run the container exposing port 8080
+```
+docker run -it -p 8080:8080 test:0.0.1-SNAPSHOT
+```
+
 
 ### HTTP methods and actions
  
