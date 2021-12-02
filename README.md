@@ -81,4 +81,23 @@ http://localhost:8080/h2-console/    (Database available at 'jdbc:h2:mem:testdb'
         "type": "strong"
 }
 ## Example Request PUT 
-### PUT (Manufacturers)                                                                                                                 
+### PUT (Manufacturers) 
+                                                                                                               
+	http://localhost:8080/manufacturers
+ #### Requests
+     {
+        "manufacturerId": 1,
+        "name": "Bohemia",
+        "nationality": "usa"
+    }
+### PUT (Beers)                                                                                                                 
+	http://localhost:8080/beers
+ #### Requests
+    {
+       "beerId": 1,
+       "description": "A strong, crisp and bitter IPA hops.",
+       "manufactureId": 1,
+       "name": "BudWeiser",
+       "privategraduation": "normal",
+       "type": "strong"
+    }
